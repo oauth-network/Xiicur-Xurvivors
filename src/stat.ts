@@ -114,21 +114,21 @@ export const powerupText = (powerup: Powerup) => {
         case Powerup.maxHealth:
             return "++MAX HEALTH"
         case Powerup.auraRadius:
-            return stats.auraRadius > 0 ? "++PLASMA SIZE" : "PLASMA FIELD"
+            return stats.auraRadius > 0 ? "++BASE SIZE" : "BASE SHILD"
         case Powerup.auraDamage:
-            return "++PLASMA DMG"
+            return "++BASE DMG"
         case Powerup.auraDamageRate:
-            return "++PLASMA PWR"
+            return "++BASE PWR"
         case Powerup.orbNum:
-            return stats.orbs > 0 ? "+1 ORB" : "LASER ORB"
+            return stats.orbs > 0 ? "+1 ZORA" : "ZORA"
         case Powerup.orbRadius:
-            return "LARGER SIZE"
+            return "ZORA SIZE"
         case Powerup.orbDamage:
-            return "ORB ++DMG"
+            return "ZORA ++DMG"
         case Powerup.movementSpeed:
             return "MOVE FASTER"
         case Powerup.lightsaberFireRate:
-            return stats.saber ? "FASTER THROWS" : "LIGHTSABER"
+            return stats.saber ? "FASTER LUM0X" : "LUM0X"
         case Powerup.lightsaberDamage:
             return "++DMG"
         case Powerup.magnet:

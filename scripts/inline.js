@@ -16,7 +16,7 @@ const ctx = await esbuild.context({
                 {
                     filename: "index.html",
                     entryPoints: ["app/main.js", "app/app.css"],
-                    title: "XIICUR SURVIIVORS",
+                    title: "XURVIIVORS",
                     inline: {
                         js: true,
                         css: true,

@@ -223,7 +223,7 @@ export const renderUI = (ctx: CTX, assets: Assets) => {
             ctx.fillStyle = WHITE
             renderFontTex(
                 ctx,
-                "XIICUR SURVIIVORS VERSION 1.0.0\nA JS13K 2024 GAME\nMADE BY SAUD WWW.SAUD.WTF\n\nLOADING...",
+                "XURVIIVORS VERSION 1.0.0\nMADE BY SAUD\n\nLOADING...",
                 20,
                 20,
             )
@@ -236,54 +236,39 @@ export const renderUI = (ctx: CTX, assets: Assets) => {
             ctx.fillStyle = BLACK1
             renderFont(
                 ctx,
-                "XIICUR SURVIIVORS",
+                "XURVIIVORS",
                 MENU_FONT_SIZE,
-                ~~(WIDTH / 5) + 2,
+                ~~(WIDTH / 5) - 8,
                 ~~(HEIGHT / 3) + 2,
             )
             ctx.fillStyle = RED
             renderFont(
                 ctx,
-                "XII",
+                "X",
                 MENU_FONT_SIZE,
-                ~~(WIDTH / 5),
+                ~~(WIDTH / 5) - 10,
                 ~~(HEIGHT / 3),
             )
             ctx.fillStyle = WHITE
             renderFont(
                 ctx,
-                "   CUR SURVI",
+                "URVIIVORS",
                 MENU_FONT_SIZE,
-                ~~(WIDTH / 5) + 15,
+                ~~(WIDTH / 5) + 7,
                 ~~(HEIGHT / 3),
             )
-            ctx.fillStyle = RED
-            renderFont(
-                ctx,
-                "I",
-                MENU_FONT_SIZE,
-                ~~(WIDTH / 5) + 153,
-                ~~(HEIGHT / 3),
-            )
-            ctx.fillStyle = WHITE
-            renderFont(
-                ctx,
-                "VORS",
-                MENU_FONT_SIZE,
-                ~~(WIDTH / 5) + 165,
-                ~~(HEIGHT / 3),
-            )
+
 
             if (buttonBlink) {
                 renderFont(
                     ctx,
                     "START",
                     MENU_FONT_SIZE,
-                    startBtn.x + 10,
-                    startBtn.y + 10,
+                    startBtn.x - 14,
+                    startBtn.y,
                 )
             }
-            renderFontTex(ctx, "BY SAUD", WIDTH / 2 + 110, HEIGHT - 10)
+            renderFontTex(ctx, "BY SAUD", (WIDTH / 2) + 28, HEIGHT / 2 -20)
             break
 
         case Scene.powerup:
