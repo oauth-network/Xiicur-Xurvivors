@@ -389,7 +389,7 @@ export const renderUI = (ctx: CTX, assets: Assets) => {
                 ctx,
                 stats.won ? "YOU WIN!" : "GAME OVER!",
                 MENU_FONT_SIZE,
-                ~~(WIDTH / 3) - 10,
+                ~~(WIDTH / 4) - 12,
                 ~~(HEIGHT / 5),
             )
             if (stats.won) {
